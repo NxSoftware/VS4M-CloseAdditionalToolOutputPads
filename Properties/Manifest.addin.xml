@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Extension>
+    <Runtime>
+        <Import assembly="CloseAdditionalToolOutputPads.dll" />
+    </Runtime>
+    
+    <Extension path="/MonoDevelop/Ide/Commands/Edit">
+        <Command
+            id="CloseAdditionalToolOutputPads.ClosePads"
+            _label="Close Extra Tool Output Pads"
+            _description="Closes extra Tool Output (1, 2, 3 etc) pads"
+            defaultHandler="CloseAdditionalToolOutputPads.ClosePadsHandler" />
+    </Extension>
+	
+    <Extension path="/MonoDevelop/Ide/MainMenu/Window">
+        <CommandItem id="CloseAdditionalToolOutputPads.ClosePads" />
+    </Extension>
+	
+</Extension>
